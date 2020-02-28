@@ -1,0 +1,286 @@
+/*==================== Basic styles ====================*/
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #ffffff;
+
+  background-color: #849d8f;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+}
+
+.container {
+
+}
+
+.btn {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+
+  background-color: #f26843;
+  border: none;
+
+  appearance: none;
+}
+
+/*==================== Header styles ====================*/
+.site-menu-item > a {
+  font-weight: 700;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.site-menu-item > a:hover,
+.site-menu-item > a:focus {
+  color: #323232;
+  text-decoration: none;
+
+  background-color: #f7f6f3;
+}
+
+.site-submenu-item > a {
+  font-size: 14px;
+  line-height: 16px;
+  color: #323232;
+  text-decoration: none;
+}
+
+.site-submenu-item:not(.site-submenu-current) > a:hover,
+.site-submenu-item:not(.site-submenu-current) > a:focus {
+  background-color: #fbded7;
+}
+
+.site-submenu-item:not(.site-submenu-current) > a:active {
+ background-color: #f6b5a5;
+}
+
+.site-submenu-highlight a {
+  font-weight: 700;
+}
+
+.site-menu-current > a,
+.site-submenu-current > a {
+ color: #ffffff;
+
+ background-color: #d07058;
+}
+
+.site-header-button {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.site-header-info {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.site-header-info a {
+  font-size: 22px;
+  line-height: 24px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.site-header-info a:hover,
+.site-header-info a:focus {
+  text-decoration: underline;
+}
+
+/*==================== Main styles ====================*/
+.promo-card-raspberry {
+  background-color: #5b0f1e;
+  background-image: url(../img/bg-raspberry.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.promo-card-chocolate {
+  background-color: #442a20;
+  background-image: url(../img/bg-chocolate.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.popular-item h3 {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 60px;
+}
+
+.popular-item .btn {
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.promo-card h3 {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.product-card-title {
+  color: #ffffff;
+}
+
+.product-card-title h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.product-card-price {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 45px;
+  text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
+}
+
+.product-card-price b {
+  font-size: 45px;
+}
+
+.benefits {
+  color: #323232;
+
+  background-color: #ecdfc3;
+  background-image: url(../img/bg-waffle.jpg);
+  background-position: 0 0;
+}
+
+.benefits h2 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.blog-post-card {
+  background-color: #f1d6cb;
+  background-image: url(../img/bg-strawberry.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.blog-post-card a {
+  color: #323232;
+  text-decoration: none;
+}
+
+.blog-post-card h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-decoration: underline;
+}
+
+.blog-post-card p {
+  font-weight: 500;
+}
+
+.blog-subscribe-card {
+  background-image: url(../img/bg-mail.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.blog-subscribe-form {
+  color: #5a5a5a;
+
+  background-color: #f8f7f4;
+}
+
+.map-card {
+  color: #323232;
+
+  background-color: #ffffff;
+}
+
+.map-card address {
+  font-style: normal;
+}
+
+.map-card p {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.map-card b {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.map-contacts a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.map-contacts a:hover,
+.map-contacts a:focus {
+  text-decoration: underline;
+}
+
+.footer-menu-item a {
+  font-size: 13px;
+  line-height: 18px;
+  color: inherit;
+}
+
+.html-academy {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.html-academy a {
+  color: inherit;
+}
