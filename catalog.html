@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Gllacy - магазин мороженого</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a>
+        <img src="img/logo.svg" width="154" height="64" alt="Логотип интернет-магазина Gllacy">
+      </a>
+
+      <ul>
+        <li>
+          <a href="#!">Каталог</a>
+          <ul>
+            <li><a href="#!">Новинки</a></li>
+            <li><a href="catalog.html">Сливочное</a></li>
+            <li><a href="#!">Щербеты</a></li>
+            <li><a href="#!">Фруктовый лед</a></li>
+            <li><a href="#!">Мелорин</a></li>
+          </ul>
+        </li>
+        <li><a href="#!">Доставка и оплата</a></li>
+        <li><a href="#!">О Компании</a></li>
+      </ul>
+
+      <ul>
+        <li>
+          <button type="button">Поиск</button>
+          <form action="https://echo.htmlacademy.ru" method="get">
+            <label>
+              Поиск по сайту
+              <input type="search" name="search" placeholder="Крем-брюле">
+            </label>
+          </form>
+        </li>
+        <li>
+          <button type="button">Вход</button>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <label>
+              Email
+              <input type="email" name="user-email" required>
+            </label>
+            <label>
+              Пароль
+              <input type="password" name="user-password" required>
+            </label>
+            <button type="submit">Войти</button>
+            <p>
+              <a href="#!">Забыли пароль?</a>
+              <a href="#!">Новая регистрация</a>
+            </p>
+          </form>
+        </li>
+        <li>
+          <button type="button">Пусто</button>
+        </li>
+      </ul>
+    </nav>
+    <p>
+      С 10 до 20, ежедневно
+      <a href="tel:+78124502525">8 812 450-25-25</a>
+    </p>
+  </header>
+
+  <main>
+    <ul>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="#!">Каталог</a></li>
+      <li>Сливочное</li>
+    </ul>
+
+    <h1>Сливочное мороженое</h1>
+
+    <section>
+      <h2>Фильтры мороженого</h2>
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <fieldset>
+          <legend>Сортировка:</legend>
+          <select name="sorting-by">
+            <option value="popularity">по популярности</option>
+            <option value="cheap">сначала недорогие</option>
+            <option value="expensive">сначала дорогие</option>
+            <option value="fat">по жирности</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <div class="price-controls">
+            <span>Цена:</span>
+            <label class="min-price">
+              <input type="number" name="min-price" value="100">
+              руб.
+            </label>
+            <span>–</span>
+            <label class="max-price">
+              <input type="number" name="max-price" value="500">
+              руб.
+            </label>
+          </div>
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="range-toggle range-toggle-min" aria-label="Фильтр стоимости от"></div>
+            <div class="range-toggle range-toggle-max" aria-label="Фильтр стоимости до"></div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Жирность:</legend>
+          <ul>
+            <li>
+              <input type="radio" name="fat" id="fat-0" value="0%">
+              <label for="fat-0">0%</label>
+            </li>
+            <li>
+              <input type="radio" name="fat" id="fat-to-10" value="to 10%" checked>
+              <label for="fat-to-10">до 10%</label>
+            </li>
+            <li>
+              <input type="radio" name="fat" id="fat-to-30" value="to 30%">
+              <label for="fat-to-30">до 30%</label>
+            </li>
+            <li>
+              <input type="radio" name="fat" id="fat-above-30" value="above 30%">
+              <label for="fat-above-30">выше 30%</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset>
+          <legend>Наполнители:</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="fillers" id="filler-chocolate" value="chocolate" checked>
+              <label for="filler-chocolate">шоколадные</label>
+            </li>
+            <li>
+              <input type="checkbox" name="fillers" id="filler-sugar" value="sugar" checked>
+              <label for="filler-sugar">сахарные присыпки</label>
+            </li>
+            <li>
+              <input type="checkbox" name="fillers" id="filler-fruit" value="fruit">
+              <label for="filler-fruit">фрукты</label>
+            </li>
+            <li>
+              <input type="checkbox" name="fillers" id="filler-sirup" value="sirup">
+              <label for="filler-sirup">сиропы</label>
+            </li>
+            <li>
+              <input type="checkbox" name="fillers" id="filler-jam" value="jam">
+              <label for="filler-jam">джемы</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit">Применить</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Каталог мороженого</h2>
+      <ul>
+        <li>
+          <article>
+            <a href="#!">
+              <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+            </a>
+            <p>
+              <img src="img/product-1.png" width="267" height="267" alt="Бело-желтое мороженое">
+            </p>
+            <p>310 ₽<span>/кг</span></p>
+            <button type="button">Быстрый просмотр</button>
+          </article>
+        </li>
+        <li>
+          <article>
+            <a href="#!">
+              <h3>Сливочно-кофейное с кусочками шоколада</h3>
+            </a>
+            <p>
+              <img src="img/product-2.png" width="267" height="267" alt="Коричневое мороженое с шоколадной присыпкой">
+            </p>
+            <p>380 ₽<span>/кг</span></p>
+            <button type="button">Быстрый просмотр</button>
+          </article>
+        </li>
+        <li>
+          <article>
+            <a href="#!">
+              <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
+            </a>
+            <p>
+              <img src="img/product-3.png" width="267" height="267" alt="Розовое мороженое с присыпкой из сердечек">
+            </p>
+            <p>355 ₽<span>/кг</span></p>
+            <button type="button">Быстрый просмотр</button>
+          </article>
+        </li>
+        <li>
+          <article>
+            <a href="#!">
+              <h3>Сливочное крем-брюле с карамельной подливкой</h3>
+            </a>
+            <p>
+              <img src="img/product-4.png" width="267" height="267" alt="Бежевое мороженое с карамелью">
+            </p>
+            <p>415 ₽<span>/кг</span></p>
+            <button type="button">Быстрый просмотр</button>
+          </article>
+        </li>
+        <li>
+          <article>
+            <a href="#!">
+              <h3>Сливочное с брусничным джемом</h3>
+            </a>
+            <p>
+              <img src="img/product-5.png" width="267" height="267" alt="Бело-розовое мороженое">
+            </p>
+            <p>325 ₽<span>/кг</span></p>
+            <button type="button">Быстрый просмотр</button>
+          </article>
+        </li>
+        <li>
+          <article>
+            <a href="#!">
+              <h3>Сливочно-черничное с цельными ягодами черники</h3>
+            </a>
+            <p>
+              <img src="img/product-6.png" width="267" height="267" alt="Мороженое с черникой">
+            </p>
+            <p>410 ₽<span>/кг</span></p>
+            <button type="button">Быстрый просмотр</button>
+          </article>
+        </li>
+        <li>
+          <article>
+            <a href="#!">
+              <h3>Сливочно-лимонное с карамельной присыпкой</h3>
+            </a>
+            <p>
+              <img src="img/product-7.png" width="267" height="267" alt="Желтое мороженое с присыпкой">
+            </p>
+            <p>375 ₽<span>/кг</span></p>
+            <button type="button">Быстрый просмотр</button>
+          </article>
+        </li>
+        <li>
+          <article>
+            <a href="#!">
+              <h3>Сливочное с шоколадной стружкой</h3>
+            </a>
+            <p>
+              <img src="img/product-8.png" width="267" height="267" alt="Белое мороженое с шоколадной стружкой">
+            </p>
+            <p>320 ₽<span>/кг</span></p>
+            <button type="button">Быстрый просмотр</button>
+          </article>
+        </li>
+        <li>
+          <article>
+            <a href="#!">
+              <h3>Сливочно-ванильное с кусочками шоколада</h3>
+            </a>
+            <p>
+              <img src="img/product-9.png" width="267" height="267" alt="Желтое мороженое с кусочками шоколада">
+            </p>
+            <p>440 ₽<span>/кг</span></p>
+            <button type="button">Быстрый просмотр</button>
+          </article>
+        </li>
+        <li>
+          <article>
+            <a href="#!">
+              <h3>Сливочноe с ментоловым сиропом</h3>
+            </a>
+            <p>
+              <img src="img/product-10.png" width="267" height="267" alt="Бирюзовое мороженое">
+            </p>
+            <p>435 ₽<span>/кг</span></p>
+            <button type="button">Быстрый просмотр</button>
+          </article>
+        </li>
+        <li>
+          <article>
+            <a href="#!">
+              <h3>Сливочное с кусочками черного шоколада</h3>
+            </a>
+            <p>
+              <img src="img/product-11.png" width="267" height="267" alt="Белое мороженое с кусочками шоколада">
+            </p>
+            <p>355 ₽<span>/кг</span></p>
+            <button type="button">Быстрый просмотр</button>
+          </article>
+        </li>
+        <li>
+          <article>
+            <a href="#!">
+              <h3>Сливочное с мятным сиропом</h3>
+            </a>
+            <p>
+              <img src="img/product-12.png" width="267" height="267" alt="Зелёное мороженое">
+            </p>
+            <p>420 ₽<span>/кг</span></p>
+            <button type="button">Быстрый просмотр</button>
+          </article>
+        </li>
+      </ul>
+
+      <ul>
+        <li><a>Назад</a></li>
+        <li><a>1</a></li>
+        <li><a href="#!">2</a></li>
+        <li><a href="#!">3</a></li>
+        <li><a href="#!">4</a></li>
+        <li><a href="#!">5</a></li>
+        <li><a href="#!">Вперёд</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <ul>
+      <li>
+        <a href="https://twitter.com/" target="_blank">Наш twitter</a>
+      </li>
+      <li>
+        <a href="https://instagram.com/" target="_blank">Наш instagram</a>
+      </li>
+      <li>
+        <a href="https://facebook.com/" target="_blank">Наш facebook</a>
+      </li>
+      <li>
+        <a href="https://vk.com/" target="_blank">Наш вконтакте</a>
+      </li>
+    </ul>
+
+    <ul>
+      <li><a href="#!">Для поставщиков</a></li>
+      <li><a href="#!">Наши документы</a></li>
+      <li><a href="#!">О производстве</a></li>
+      <li><a href="#!">Экологические стандарты</a></li>
+    </ul>
+
+    <p>
+      <a href="https://htmlacademy.ru/intensive/htmlcss">Логотип HTML Academy</a>
+      <span>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a> &copy; 2019</span>
+    </p>
+  </footer>
+
+</body>
+</html>
