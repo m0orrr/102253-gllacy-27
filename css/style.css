@@ -24,13 +24,6 @@ img {
   height: auto;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-}
-
 .visually-hidden {
   position: absolute;
 
@@ -67,6 +60,13 @@ ul {
 }
 
 /*==================== Header styles ====================*/
+.site-menu {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
 .site-menu-item > a {
   font-weight: 700;
   line-height: 18px;
@@ -79,6 +79,13 @@ ul {
   text-decoration: none;
 
   background-color: #f7f6f3;
+}
+
+.site-submenu {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .site-submenu-item > a {
@@ -108,15 +115,19 @@ ul {
  background-color: #d07058;
 }
 
+.site-header-buttons {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
 .site-header-button {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
-
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
+  text-decoration: none;
 }
 
 .site-header-info {
@@ -138,6 +149,24 @@ ul {
 }
 
 /*==================== Main styles ====================*/
+.popular-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.popular-item h3 {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 60px;
+}
+
+.popular-item .btn {
+  font-size: 32px;
+  line-height: 44px;
+}
+
 .promo-card-raspberry {
   background-color: #5b0f1e;
   background-image: url(../img/bg-raspberry.jpg);
@@ -152,21 +181,17 @@ ul {
   background-position: center;
 }
 
-.popular-item h3 {
-  font-weight: 700;
-  font-size: 60px;
-  line-height: 60px;
-}
-
-.popular-item .btn {
-  font-size: 32px;
-  line-height: 44px;
-}
-
 .promo-card h3 {
   font-weight: 700;
   font-size: 35px;
   line-height: 41px;
+}
+
+.best-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .product-card-title {
@@ -197,6 +222,13 @@ ul {
   background-color: #ecdfc3;
   background-image: url(../img/bg-waffle.jpg);
   background-position: 0 0;
+}
+
+.benefits-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .benefits h2 {
@@ -268,6 +300,21 @@ ul {
 .map-contacts a:hover,
 .map-contacts a:focus {
   text-decoration: underline;
+}
+
+/*==================== Footer styles ====================*/
+.footer-social {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.footer-menu {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .footer-menu-item a {

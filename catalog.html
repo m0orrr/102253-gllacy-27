@@ -32,7 +32,7 @@
 
       <ul class="site-header-buttons">
         <li class="site-search">
-          <button type="button">Поиск</button>
+          <a class="site-header-button" href="#!">Поиск</a>
           <form action="https://echo.htmlacademy.ru" method="get">
             <label>
               Поиск по сайту
@@ -41,7 +41,7 @@
           </form>
         </li>
         <li class="site-login">
-          <button type="button">Вход</button>
+          <a class="site-header-button" href="#!">Вход</a>
           <form action="https://echo.htmlacademy.ru" method="post">
             <label>
               Email
@@ -59,28 +59,44 @@
           </form>
         </li>
         <li class="site-cart">
-          <button type="button">2 товара</button>
+          <a class="site-header-button" href="#!">2 товара</a>
           <div>
-            <ul>
-              <li>
-                <button type="button">Удалить</button>
-                <span>
+            <table>
+              <tr>
+                <td>
+                  <button type="button">Удалить</button>
+                </td>
+                <td>
                   <img src="./img/product-cart-1.png" width="33" height="33"  alt="Мороженое в корзине">
-                </span>
-                <span>Пломбир с апельсиновым джемом</span>
-                <span>1,5 кг х <span>200 руб.</span></span>
-                <span>300 руб.</span>
-              </li>
-              <li>
-                <button type="button">Удалить</button>
-                <span>
+                </td>
+                <td>
+                  Пломбир с апельсиновым джемом
+                </td>
+                <td>
+                  1,5 кг х <span>200 руб.</span>
+                </td>
+                <td>
+                  300 руб.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <button type="button">Удалить</button>
+                </td>
+                <td>
                   <img src="./img/product-cart-2.png" width="33" height="33"  alt="Мороженое в корзине">
-                </span>
-                <span>Клубничный пломбир с присыпкой из белого шоколада</span>
-                <span>1,5 кг х <span>200 руб.</span></span>
-                <span>450 руб.</span>
-              </li>
-            </ul>
+                </td>
+                <td>
+                  Клубничный пломбир с присыпкой из белого шоколада
+                </td>
+                <td>
+                  1,5 кг х <span>200 руб.</span>
+                </td>
+                <td>
+                  450 руб.
+                </td>
+              </tr>
+            </table>
             <p>Итого: <b>750 руб.</b></p>
             <a href="#!">Оформить заказ</a>
           </div>
@@ -349,8 +365,8 @@
     </section>
   </main>
 
-  <footer>
-    <ul>
+  <footer class="site-footer">
+    <ul class="footer-social">
       <li>
         <a href="https://twitter.com/" target="_blank">Наш twitter</a>
       </li>
@@ -365,14 +381,14 @@
       </li>
     </ul>
 
-    <ul>
-      <li><a href="#!">Для поставщиков</a></li>
-      <li><a href="#!">Наши документы</a></li>
-      <li><a href="#!">О производстве</a></li>
-      <li><a href="#!">Экологические стандарты</a></li>
+    <ul class="footer-menu">
+      <li class="footer-menu-item"><a href="#!">Для поставщиков</a></li>
+      <li class="footer-menu-item"><a href="#!">Наши документы</a></li>
+      <li class="footer-menu-item"><a href="#!">О производстве</a></li>
+      <li class="footer-menu-item"><a href="#!">Экологические стандарты</a></li>
     </ul>
 
-    <p>
+    <p class="html-academy">
       <a href="https://htmlacademy.ru/intensive/htmlcss">Логотип HTML Academy</a>
       <span>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a> &copy; 2019</span>
     </p>
