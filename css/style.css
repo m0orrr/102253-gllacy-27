@@ -45,6 +45,13 @@ img {
 
 }
 
+.list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
 .btn {
   font-weight: 700;
   font-size: 18px;
@@ -61,13 +68,6 @@ img {
 }
 
 /*==================== Header styles ====================*/
-.site-menu {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-}
-
 .site-menu-item > a {
   font-weight: 700;
   line-height: 18px;
@@ -80,13 +80,6 @@ img {
   text-decoration: none;
 
   background-color: #f7f6f3;
-}
-
-.site-submenu {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
 }
 
 .site-submenu-item > a {
@@ -116,14 +109,7 @@ img {
  background-color: #d07058;
 }
 
-.site-header-buttons {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-}
-
-.site-header-button {
+.site-header-btn {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -150,13 +136,6 @@ img {
 }
 
 /*==================== Main styles ====================*/
-.popular-list {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-}
-
 .popular-item h3 {
   font-weight: 700;
   font-size: 60px;
@@ -188,26 +167,12 @@ img {
   line-height: 41px;
 }
 
-.best-list {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-}
-
 .benefits {
   color: #323232;
 
   background-color: #ecdfc3;
   background-image: url(../img/bg-waffle.jpg);
   background-position: 0 0;
-}
-
-.benefits-list {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
 }
 
 .benefits h2 {
@@ -282,13 +247,6 @@ img {
 }
 
 /*==================== Inner page styles ====================*/
-.breadcrumbs {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-}
-
 .breadcrumbs li {
   font-size: 14px;
   line-height: 16px;
@@ -321,13 +279,6 @@ img {
   line-height: 16px;
 }
 
-.filter-list {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-}
-
 .filter-label {
   font-weight: 500;
   font-size: 16px;
@@ -336,13 +287,6 @@ img {
   cursor: pointer;
 
   user-select: none;
-}
-
-.catalog-list {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
 }
 
 .product-card-title {
@@ -367,13 +311,6 @@ img {
   font-size: 45px;
 }
 
-.pagination {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-}
-
 .pagination li {
   font-weight: 500;
   font-size: 16px;
@@ -392,20 +329,6 @@ img {
 }
 
 /*==================== Footer styles ====================*/
-.footer-social {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-}
-
-.footer-menu {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-}
-
 .footer-menu-item a {
   font-size: 13px;
   line-height: 18px;
