@@ -55,6 +55,7 @@ img {
 
   background-color: #f26843;
   border: none;
+  cursor: pointer;
 
   appearance: none;
 }
@@ -194,28 +195,6 @@ img {
   list-style: none;
 }
 
-.product-card-title {
-  color: #ffffff;
-}
-
-.product-card-title h3 {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 22px;
-  text-align: center;
-}
-
-.product-card-price {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 45px;
-  text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
-}
-
-.product-card-price b {
-  font-size: 45px;
-}
-
 .benefits {
   color: #323232;
 
@@ -300,6 +279,116 @@ img {
 .map-contacts a:hover,
 .map-contacts a:focus {
   text-decoration: underline;
+}
+
+/*==================== Inner page styles ====================*/
+.breadcrumbs {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.breadcrumbs li {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.breadcrumbs a {
+  color: inherit;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  text-decoration: none;
+}
+
+.page-title {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.filter-group {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.filter-group legend {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.filter-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.filter-label {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+
+  cursor: pointer;
+
+  user-select: none;
+}
+
+.catalog-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.product-card-title {
+  color: #ffffff;
+}
+
+.product-card-title h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.product-card-price {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 45px;
+  text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
+}
+
+.product-card-price b {
+  font-size: 45px;
+}
+
+.pagination {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.pagination li {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.pagination a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.pagination-current a {
+  color: #000000;
+
+  background-color: #ffffff;
 }
 
 /*==================== Footer styles ====================*/
