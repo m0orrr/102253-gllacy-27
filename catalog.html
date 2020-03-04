@@ -5,11 +5,12 @@
   <meta charset="utf-8">
   <title>Gllacy - магазин мороженого</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="inner-page">
-  <header class="site-header">
+  <header class="site-header container">
     <nav class="site-nav">
       <a class="site-logo" href="./index.html">
         <img src="./img/logo.svg" width="154" height="64" alt="Логотип интернет-магазина Gllacy">
@@ -60,7 +61,7 @@
         </li>
         <li class="site-cart">
           <a class="site-header-btn" href="#!">2 товара</a>
-          <div>
+          <div class="cart-wrapper">
             <table>
               <tr>
                 <td>
@@ -104,12 +105,12 @@
       </ul>
     </nav>
     <p class="site-header-info">
-      С 10 до 20, ежедневно
+      <span>С 10 до 20, ежедневно</span>
       <a href="tel:+78124502525">8 812 450-25-25</a>
     </p>
   </header>
 
-  <main>
+  <main class="container">
     <ul class="breadcrumbs list">
       <li><a href="./index.html">Главная</a></li>
       <li><a href="#!">Каталог</a></li>
@@ -119,7 +120,7 @@
     <h1 class="page-title">Сливочное мороженое</h1>
 
     <section class="filter">
-      <h2>Фильтры мороженого</h2>
+      <h2 class="visually-hidden">Фильтры мороженого</h2>
       <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="filter-group">
           <legend>Сортировка:</legend>
@@ -205,7 +206,7 @@
     </section>
 
     <section class="catalog">
-      <h2>Каталог мороженого</h2>
+      <h2 class="visually-hidden">Каталог мороженого</h2>
       <ul class="catalog-list list">
         <li>
           <article class="product-card">
@@ -377,23 +378,25 @@
         </li>
       </ul>
 
-      <ul class="pagination list">
-        <li class="pagination-prev disable">
-          <a>Назад</a>
-        </li>
-        <li class="pagination-current"><a>1</a></li>
-        <li><a href="#!">2</a></li>
-        <li><a href="#!">3</a></li>
-        <li><a href="#!">4</a></li>
-        <li><a href="#!">5</a></li>
-        <li class="pagination-next">
-          <a href="#!">Вперёд</a>
-        </li>
-      </ul>
+      <div class="pagination">
+        <ul class="pagination-list list">
+          <li class="pagination-prev disable">
+            <a>Назад</a>
+          </li>
+          <li class="pagination-current"><a>1</a></li>
+          <li><a href="#!">2</a></li>
+          <li><a href="#!">3</a></li>
+          <li><a href="#!">4</a></li>
+          <li><a href="#!">5</a></li>
+          <li class="pagination-next">
+            <a href="#!">Вперёд</a>
+          </li>
+        </ul>
+      </div>
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="site-footer container">
     <ul class="footer-social list">
       <li>
         <a href="https://twitter.com/" target="_blank">Наш twitter</a>
