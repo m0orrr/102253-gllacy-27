@@ -44,14 +44,12 @@
                   <path d="M16.958 15.527L11.75 10.32C12.533 9.247 13 7.93 13 6.5 13 2.91 10.09 0 6.5 0S0 2.91 0 6.5 2.91 13 6.5 13c1.438 0 2.763-.473 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/>
               </svg>
             </a>
-            <div class="hover-wrapper search">
-              <form class="site-search-form" action="https://echo.htmlacademy.ru" method="get">
-                <label>
-                  <span class="visually-hidden">Поиск по сайту</span>
-                  <input type="search" name="search" placeholder="Крем-брюле">
-                </label>
-              </form>
-            </div>
+            <form class="site-search-form hover-wrapper" action="https://echo.htmlacademy.ru" method="get">
+              <label>
+                <span class="visually-hidden">Поиск по сайту</span>
+                <input type="search" name="search" placeholder="Крем-брюле">
+              </label>
+            </form>
           </li>
 
           <li class="site-login hover-trigger">
@@ -62,25 +60,23 @@
               </svg>
               <span>Вход</span>
             </a>
-            <div class="hover-wrapper login">
-              <form class="site-login-form" action="https://echo.htmlacademy.ru" method="post">
-                <label>
-                  <span class="visually-hidden">Email</span>
-                  <input type="email" name="user-email" placeholder="email@example.com" required>
-                </label>
-                <label>
-                  <span class="visually-hidden">Пароль</span>
-                  <input type="password" name="user-password" placeholder="••••••••" required>
-                </label>
-                <div class="login-form-btn-wrapper">
-                  <button class="btn" type="submit">Войти</button>
-                  <p>
-                    <a href="#!">Забыли пароль?</a>
-                    <a href="#!">Новая регистрация</a>
-                  </p>
-                </div>
-              </form>
-            </div>
+            <form class="site-login-form hover-wrapper" action="https://echo.htmlacademy.ru" method="post">
+              <label>
+                <span class="visually-hidden">Email</span>
+                <input type="email" name="user-email" placeholder="email@example.com" required>
+              </label>
+              <label>
+                <span class="visually-hidden">Пароль</span>
+                <input type="password" name="user-password" placeholder="••••••••" required>
+              </label>
+              <div class="login-form-btn-wrapper">
+                <button class="btn" type="submit">Войти</button>
+                <p>
+                  <a href="#!">Забыли пароль?</a>
+                  <a href="#!">Новая регистрация</a>
+                </p>
+              </div>
+            </form>
           </li>
 
           <li class="site-cart">
