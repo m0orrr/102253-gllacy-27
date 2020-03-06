@@ -226,7 +226,7 @@
               <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
             </li>
             <li class="benefits-item">
-              <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+              <p>Доставка нашего мороженого до заказчиков осуществляется в&nbsp;специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
             </li>
           </ul>
         </section>
@@ -235,20 +235,22 @@
           <h2 class="visually-hidden">Блог про наш магазин</h2>
           <div class="index-blog-wrap">
             <article class="blog-card blog-post-card">
+              <p>Новое в нашем блоге</p>
               <a href="#!">
                 <h3>10 способов сервировки фруктовых щербетов к столу</h3>
               </a>
-              <p>Новое в нашем блоге</p>
             </article>
             <article class="blog-card blog-subscribe-card">
               <h3 class="visually-hidden">Подписка на рассылку</h3>
               <form class="blog-subscribe-form" action="https://echo.htmlacademy.ru" method="post">
                 <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-                <label>
-                  Ваш email
-                  <input type="email" name="mailing-email" placeholder="email@example.com" required>
-                </label>
-                <button class="btn" type="submit">Отправить</button>
+                <div class="blog-subscribe-group">
+                  <label>
+                    <span class="visually-hidden">Ваш email</span>
+                    <input type="email" name="mailing-email" placeholder="email@example.com" required>
+                  </label>
+                  <button class="btn" type="submit">Отправить</button>
+                </div>
               </form>
             </article>
           </div>
@@ -264,7 +266,7 @@
           <div class="map-card">
             <address class="map-contacts">
               <p>
-                Адрес главного офиса и офлайн-магазина:
+                Адрес главного офиса<br>и офлайн-магазина:
                 <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
               </p>
               <p>
@@ -282,28 +284,38 @@
     <footer class="site-footer container">
       <ul class="footer-social list">
         <li>
-          <a href="https://twitter.com/" target="_blank">Наш twitter</a>
+          <a class="twitter" href="https://twitter.com/" target="_blank">
+            <span class="visually-hidden">Наш twitter</span>
+          </a>
         </li>
         <li>
-          <a href="https://instagram.com/" target="_blank">Наш instagram</a>
+          <a class="instagram" href="https://instagram.com/" target="_blank">
+            <span class="visually-hidden">Наш instagram</span>
+          </a>
         </li>
         <li>
-          <a href="https://facebook.com/" target="_blank">Наш facebook</a>
+          <a class="facebook" href="https://facebook.com/" target="_blank">
+            <span class="visually-hidden">Наш facebook</span>
+          </a>
         </li>
         <li>
-          <a href="https://vk.com/" target="_blank">Наш вконтакте</a>
+          <a class="vk" href="https://vk.com/" target="_blank">
+            <span class="visually-hidden">Наш вконтакте</span>
+          </a>
         </li>
       </ul>
   
       <ul class="footer-menu list">
-        <li class="footer-menu-item"><a href="#!">Для поставщиков</a></li>
-        <li class="footer-menu-item"><a href="#!">Наши документы</a></li>
-        <li class="footer-menu-item"><a href="#!">О производстве</a></li>
-        <li class="footer-menu-item"><a href="#!">Экологические стандарты</a></li>
+        <li class="footer-menu-highlight"><a href="#!">Для поставщиков</a></li>
+        <li><a href="#!">Наши документы</a></li>
+        <li><a href="#!">О производстве</a></li>
+        <li><a href="#!">Экологические стандарты</a></li>
       </ul>
   
       <p class="html-academy">
-        <a href="https://htmlacademy.ru/intensive/htmlcss">Логотип HTML Academy</a>
+        <a class="html-academy-icon" href="https://htmlacademy.ru/intensive/htmlcss">
+          <span class="visually-hidden">Логотип HTML Academy</span>
+        </a>
         <span>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a> &copy; 2019</span>
       </p>
     </footer>

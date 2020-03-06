@@ -604,11 +604,13 @@ img {
   text-align: right;
 }
 
+.best {
+  margin-bottom: -17px;
+}
+
 .best-list {
   display: flex;
   flex-wrap: wrap;
-
-  margin-bottom: -37px;
 }
 
 .best-list li {
@@ -623,6 +625,7 @@ img {
 
 .benefits {
   margin-bottom: 40px;
+  padding: 25px 20px 15px;
 
   color: #323232;
 
@@ -632,6 +635,16 @@ img {
   border-radius: 16px;
 }
 
+.benefits h2 {
+  margin: 0;
+  margin-bottom: 8px;
+
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.15px;
+}
+
 .benefits-list {
   display: flex;
   flex-wrap: wrap;
@@ -639,13 +652,34 @@ img {
 }
 
 .benefits-list li {
-  width: 560px;
+  width: 541px;
+  padding-top: 14px;
+  padding-left: 56px;
+  margin-bottom: 8px;
+
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 49px;
 }
 
-.benefits h2 {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 30px;
+.benefits-list li:nth-child(1) {
+  background-image: url("../img/icon-ice-cream.svg");
+}
+
+.benefits-list li:nth-child(2) {
+  background-image: url("../img/icon-cow.svg");
+}
+
+.benefits-list li:nth-child(3) {
+  background-image: url("../img/icon-leaf.svg");
+}
+
+.benefits-list li:nth-child(4) {
+  background-image: url("../img/icon-thermometer.svg");
+}
+
+.benefits-item p {
+  margin: 0;
 }
 
 .index-blog-wrap {
@@ -656,18 +690,22 @@ img {
 
 .blog-card {
   width: 560px;
+  min-height: 220px;
   margin-bottom: 40px;
 
   border-radius: 16px;
 }
 
 .blog-post-card {
+  padding: 23px 19px;
+
   color: #323232;
 
   background-color: #f1d6cb;
   background-image: url("../img/bg-strawberry.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .blog-post-card a {
@@ -675,25 +713,103 @@ img {
 }
 
 .blog-post-card h3 {
+  width: 285px;
+  margin: 0;
+
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
 }
 
 .blog-post-card p {
+  margin: 0;
+  margin-bottom: 4px;
+
   font-weight: 500;
 }
 
 .blog-subscribe-card {
+  padding: 5px 6px;
+
   background-image: url("../img/bg-mail.svg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .blog-subscribe-form {
+  height: 100%;
+  padding: 29px 21px;
+
   color: #5a5a5a;
 
   background-color: #f8f7f4;
+  border-radius: 10px;
+}
+
+.blog-subscribe-form p {
+  margin: 0;
+  margin-bottom: 37px;
+}
+
+.blog-subscribe-group {
+  display: flex;
+}
+
+.blog-subscribe-group label {
+  flex-grow: 1;
+  margin-right: 14px;
+}
+
+.blog-subscribe-group input {
+  display: block;
+  width: 100%;
+  padding: 12px 14px;
+  font-weight: 700;
+  font-size: 16px;
+  border: solid 1px #ffffff;
+  box-shadow: 0 0 0 1px #d3d3d2;
+  border-radius: 4px;
+  outline: none;
+}
+
+.blog-subscribe-group input:hover {
+  border: solid 1px #c8c7c6;
+  box-shadow: 0 0 0 1px #c8c7c6;
+}
+
+.blog-subscribe-group input:focus {
+  border: solid 1px #90beed;
+  box-shadow: 0 0 0 1px #90beed;
+}
+
+.blog-subscribe-group input::-webkit-input-placeholder {
+  font-weight: 400;
+  color: #999999;
+}
+
+.blog-subscribe-group input::-moz-placeholder {
+  font-weight: 400;
+  color: #999999;
+}
+
+.blog-subscribe-group input:-ms-input-placeholder {
+  font-weight: 400;
+  color: #999999;
+}
+
+.blog-subscribe-group input::-ms-input-placeholder {
+  font-weight: 400;
+  color: #999999;
+}
+
+.blog-subscribe-group input::placeholder {
+  font-weight: 400;
+  color: #999999;
+}
+
+.blog-subscribe-form .btn {
+  padding: 10px 17px;
 }
 
 .map {
@@ -723,6 +839,7 @@ img {
   right: 27px;
 
   width: 302px;
+  padding: 28px 25px;
 
   color: #323232;
 
@@ -730,16 +847,23 @@ img {
   border-radius: 10px;
 }
 
-.map-card address {
+.map-contacts {
+  margin-bottom: 27px;
+
   font-style: normal;
 }
 
-.map-card p {
+.map-contacts p {
+  margin: 0;
+  margin-bottom: 18px;
+
   font-size: 14px;
-  line-height: 20px;
+  line-height: 21px;
 }
 
-.map-card b {
+.map-contacts b {
+  display: block;
+
   font-size: 18px;
   line-height: 24px;
 }
@@ -957,17 +1081,137 @@ img {
   padding-bottom: 26px;
 }
 
-.footer-menu-item a {
+.footer-social {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: -15px;
+}
+
+.footer-social,
+.html-academy {
+  width: 200px;
+}
+
+.footer-social li {
+  margin-right: 18px;
+  margin-bottom: 15px;
+}
+
+.footer-social a {
+  position: relative;
+
+  display: block;
+  width: 32px;
+  height: 32px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 32px;
+  border-radius: 50%;
+  opacity: 0.8;
+  transition: 0.3s ease;
+}
+
+.footer-social a::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 1px;
+
+  display: block;
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px #ffffff;
+  opacity: 0.5;
+  transition: 0.3s ease;
+}
+
+.footer-social a:hover,
+.footer-social a:focus {
+  opacity: 1;
+}
+
+.footer-social a:active,
+.footer-social a:hover::before,
+.footer-social a:focus::before {
+  opacity: 0.7;
+}
+
+.footer-social .twitter {
+  background-image: url(../img/icon-twitter.svg);
+}
+
+.footer-social .instagram {
+  background-image: url(../img/icon-instagram.svg);
+}
+
+.footer-social .facebook {
+  background-image: url(../img/icon-facebook.svg);
+}
+
+.footer-social .vk {
+  background-image: url(../img/icon-vk.svg);
+}
+
+.footer-menu {
+  display: flex;
+  flex-wrap: wrap;
+  width: 345px;
+  margin-top: 14px;
+}
+
+.footer-menu li {
+  min-width: 142px;
+  padding-left: 22px;
+
   font-size: 13px;
   line-height: 18px;
+}
+
+.footer-menu-highlight {
+  background-image: url("../img/icon-heart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 4px;
+  background-size: 15px 13px;
+}
+
+.footer-menu-highlight a {
+  font-weight: 700;
+}
+
+.footer-menu a {
   color: inherit;
 }
 
+.footer-menu a:hover,
+.footer-menu a:focus {
+  text-decoration: none;
+}
+
 .html-academy {
+  margin: 0;
+
   font-size: 12px;
   line-height: 18px;
+  text-align: right;
 }
 
 .html-academy a {
   color: inherit;
+}
+
+.html-academy-icon {
+  display: block;
+  width: 114px;
+  height: 39px;
+  margin-left: 11px;
+  margin-bottom: 2px;
+
+  background-image: url("../img/logo-htmlacademy.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
 }
