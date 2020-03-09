@@ -334,30 +334,6 @@ a {
   box-shadow: 0 0 0 1px #90beed;
 }
 
-.site-search-form input::-webkit-input-placeholder,
-.site-login-form input::-webkit-input-placeholder {
-  font-weight: 400;
-  color: #999999;
-}
-
-.site-search-form input::-moz-placeholder,
-.site-login-form input::-moz-placeholder {
-  font-weight: 400;
-  color: #999999;
-}
-
-.site-search-form input:-ms-input-placeholder,
-.site-login-form input:-ms-input-placeholder {
-  font-weight: 400;
-  color: #999999;
-}
-
-.site-search-form input::-ms-input-placeholder,
-.site-login-form input::-ms-input-placeholder {
-  font-weight: 400;
-  color: #999999;
-}
-
 .site-search-form input::placeholder,
 .site-login-form input::placeholder {
   font-weight: 400;
@@ -673,6 +649,8 @@ p.cart-total {
 }
 
 .promo-card {
+  display: flex;
+  flex-direction: column;
   width: 560px;
   margin-bottom: 40px;
   padding: 18px 19px 25px;
@@ -681,7 +659,6 @@ p.cart-total {
 
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
 }
 
 .promo-card-raspberry {
@@ -712,9 +689,10 @@ p.cart-total {
   line-height: 22px;
 }
 
-.promo-card p:last-child {
-  margin: 0;
-  text-align: right;
+.promo-card .btn {
+  align-self: flex-end;
+  margin-top: auto;
+  padding: 10px 23px;
 }
 
 .best {
@@ -899,26 +877,6 @@ p.cart-total {
 .blog-subscribe-group input:focus {
   border: solid 1px #90beed;
   box-shadow: 0 0 0 1px #90beed;
-}
-
-.blog-subscribe-group input::-webkit-input-placeholder {
-  font-weight: 400;
-  color: #999999;
-}
-
-.blog-subscribe-group input::-moz-placeholder {
-  font-weight: 400;
-  color: #999999;
-}
-
-.blog-subscribe-group input:-ms-input-placeholder {
-  font-weight: 400;
-  color: #999999;
-}
-
-.blog-subscribe-group input::-ms-input-placeholder {
-  font-weight: 400;
-  color: #999999;
 }
 
 .blog-subscribe-group input::placeholder {
