@@ -889,6 +889,8 @@ p.cart-total {
 }
 
 .map {
+  position: relative;
+
   min-height: 430px;
 
   background-color: #eaeaea;
@@ -896,6 +898,7 @@ p.cart-total {
 
 .map-container {
   position: relative;
+  z-index: 1;
 
   width: 1200px;
   margin: 0 auto;
@@ -907,6 +910,27 @@ p.cart-total {
 
 .map-img img {
   display: block;
+}
+
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  display: block;
+  width: 100%;
+
+  border: none;
+}
+
+.map-container.card {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 3;
+
+  transform: translateX(-50%);
 }
 
 .map-card {
@@ -1585,4 +1609,174 @@ p.cart-total {
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: contain;
+}
+
+/*==================== Modals styles ====================*/
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+
+  display: none;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  color: #323232;
+
+  background-color: #f8f7f4;
+  border-radius: 10px;
+}
+
+.modal-show {
+  display: block;
+}
+
+.modal-bounce {
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+.modal-login {
+  width: 478px;
+  margin-top: -223px;
+  margin-left: -238px;
+  padding: 16px 25px 27px;
+}
+
+.modal-title {
+  margin: 0;
+  margin-bottom: 19px;
+
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.modal-form-group {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.modal-form-group input,
+.modal-form-group textarea {
+  display: block;
+  width: 100%;
+  padding: 12px 15px;
+  font-weight: 700;
+  font-size: 16px;
+  border: solid 1px #ffffff;
+  box-shadow: 0 0 0 1px #d3d3d2;
+  border-radius: 4px;
+  outline: none;
+}
+
+.modal-form-group input:hover,
+.modal-form-group textarea:hover {
+  border: solid 1px #c8c7c6;
+  box-shadow: 0 0 0 1px #c8c7c6;
+}
+
+.modal-form-group input:focus,
+.modal-form-group textarea:focus {
+  border: solid 1px #90beed;
+  box-shadow: 0 0 0 1px #90beed;
+}
+
+.modal-form-group input::placeholder,
+.modal-form-group textarea::placeholder {
+  font-weight: 400;
+  color: #999999;
+}
+
+.modal-form-group input {
+  width: 267px;
+}
+
+.modal-textarea-group {
+  margin-bottom: 25px;
+}
+
+.modal-textarea-group textarea {
+  min-width: 428px;
+  max-width: 428px;
+  min-height: 155px;
+}
+
+.modal-form-btn {
+  margin: 0;
+
+  text-align: right;
+}
+
+.modal-form-btn .btn {
+  padding: 10px 23px;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+
+  width: 26px;
+  height: 26px;
+
+  background-color: transparent;
+  background-image: url("../img/icon-close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18px;
+  border: none;
+  cursor: pointer;
 }
