@@ -1,8 +1,8 @@
-var link = document.querySelector('.form-link');
+var link = document.querySelector(".form-link");
 
-var modalWrapper = document.querySelector('.modal-wrapper');
-var modalLogin = modalWrapper.querySelector('.modal-login');
-var modalClose = modalWrapper.querySelector('.modal-close-btn');
+var modalWrapper = document.querySelector(".modal-wrapper");
+var modalLogin = modalWrapper.querySelector(".modal-login");
+var modalClose = modalWrapper.querySelector(".modal-close-btn");
 
 var formFeedback = modalLogin.querySelector("form");
 var nameFeedback = formFeedback.querySelector("[name=name]");
